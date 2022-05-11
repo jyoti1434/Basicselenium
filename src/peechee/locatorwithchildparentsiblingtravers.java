@@ -4,10 +4,11 @@ import java.time.Duration;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+
 import org.openqa.selenium.edge.EdgeDriver;
 
 public class locatorwithchildparentsiblingtravers {
+
 
 	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
@@ -25,6 +26,7 @@ public class locatorwithchildparentsiblingtravers {
         driver.findElement(By.xpath("//input[@placeholder='Your Email*']")).sendKeys("kumari.jyoti1434@gmail.com");
         driver.findElement(By.xpath("//button[text()='Submit']")).click();
 		driver.findElement(By.linkText("Automation Practise - 2")).click();
+
 		//absolute xpath 
 		System.out.println(driver.findElement(By.xpath("/html/body/header/div/button[1]")).getText());
 		driver.findElement(By.xpath("/html/body/header/div/button[1]")).click();
